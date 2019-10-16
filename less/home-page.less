@@ -2,22 +2,39 @@
   background: url(/img/showcase.jpg) no-repeat center;
   height: 75%;
 
-  // Icon embedded into input
-  .input-container {
-    position: relative;
-    padding: 0;
-    margin: 0;
-  }
-  .input {
-    height: 20px;
-    margin: 0;
-    padding-left: 30px;
-  }
-  #input-icon {
-    position: absolute;
-    bottom: 8px;
-    left: 10px;
-    width: 10px;
-    height: 10px;
+  .form-wrapper {
+    height: 100%;
+    .displayFlex(center, row, center, none);
+
+    input {
+      padding: 10%;
+    }
+
+    .btn {
+      margin-left: 5%;
+      .primaryBtn(18px 40px, block, @primary-color, white);
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    // Icon embedded into input
+    .input-container {
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+    .input {
+      height: 20px;
+      margin: 0;
+      padding-left: 30px;
+    }
+    #input-icon {
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      left: 8px;
+    }
   }
 }

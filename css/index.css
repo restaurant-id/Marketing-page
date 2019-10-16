@@ -224,20 +224,41 @@ img {
   background: url(/img/showcase.jpg) no-repeat center;
   height: 75%;
 }
-.showcase .input-container {
+.showcase .form-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.showcase .form-wrapper input {
+  padding: 10%;
+}
+.showcase .form-wrapper .btn {
+  margin-left: 5%;
+  text-decoration: none;
+  padding: 18px 40px;
+  display: block;
+  color: #7601d6;
+  background: white;
+}
+.showcase .form-wrapper .btn a {
+  text-decoration: none;
+}
+.showcase .form-wrapper .input-container {
   position: relative;
   padding: 0;
   margin: 0;
 }
-.showcase .input {
+.showcase .form-wrapper .input {
   height: 20px;
   margin: 0;
   padding-left: 30px;
 }
-.showcase #input-icon {
+.showcase .form-wrapper #input-icon {
   position: absolute;
-  bottom: 8px;
-  left: 10px;
-  width: 10px;
-  height: 10px;
+  top: 30%;
+  bottom: 0;
+  left: 8px;
 }
