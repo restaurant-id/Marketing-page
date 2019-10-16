@@ -1,3 +1,7 @@
+body {
+  background: rgb(221, 221, 221);
+}
+
 .showcase {
   .bg-img {
     background: url(/img/showcase.jpg) no-repeat center center;
@@ -72,11 +76,6 @@
         color: @primary-color;
         text-decoration: none;
       }
-
-      h5 {
-        font-size: 2rem;
-        font-weight: bold;
-      }
     }
 
     .row {
@@ -98,6 +97,65 @@
             background: @secondary-color;
             padding: 10%;
             width: 100%;
+          }
+        }
+      }
+
+      .col-2 {
+        margin-left: 5%;
+        width: 55%;
+        height: 100%;
+
+        h5 {
+          text-align: center;
+          font-size: 3rem;
+          color: @secondary-color;
+          font-weight: bold;
+          padding: 1% 0;
+        }
+
+        .card {
+          background: #fff;
+          padding: 2%;
+          margin: 1% 0;
+
+          width: 100%;
+
+          .message {
+            padding: 2%;
+          }
+
+          .flex-wrapper {
+            padding-top: 2%;
+            .displayFlex(none, row, none, none);
+
+            .user-pic {
+              width: 15%;
+              height: 15%;
+              border-radius: 50%;
+            }
+
+            .user-info {
+              width: 100%;
+              .displayFlex(space-between, row, none, none);
+
+              .account-info {
+                p {
+                  text-align: center;
+
+                  span {
+                    color: @secondary-color;
+                    display: block;
+                    margin-left: 20%;
+                  }
+                }
+              }
+              .time-posted {
+                p {
+                  color: @secondary-color;
+                }
+              }
+            }
           }
         }
       }

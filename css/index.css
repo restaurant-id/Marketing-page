@@ -220,6 +220,9 @@ img {
 .navbar .container .right-side-ul li a i {
   color: black;
 }
+body {
+  background: #dddddd;
+}
 .showcase .bg-img {
   background: url(/img/showcase.jpg) no-repeat center center;
   width: 100%;
@@ -294,10 +297,6 @@ img {
   color: #7601d6;
   text-decoration: none;
 }
-.restaurants-selection .container .top-headings h5 {
-  font-size: 2rem;
-  font-weight: bold;
-}
 .restaurants-selection .container .row {
   display: flex;
   justify-content: space-between;
@@ -325,4 +324,57 @@ img {
   background: #5a5a5a;
   padding: 10%;
   width: 100%;
+}
+.restaurants-selection .container .row .col-2 {
+  margin-left: 5%;
+  width: 55%;
+  height: 100%;
+}
+.restaurants-selection .container .row .col-2 h5 {
+  text-align: center;
+  font-size: 3rem;
+  color: #5a5a5a;
+  font-weight: bold;
+  padding: 1% 0;
+}
+.restaurants-selection .container .row .col-2 .card {
+  background: #fff;
+  padding: 2%;
+  margin: 1% 0;
+  width: 100%;
+}
+.restaurants-selection .container .row .col-2 .card .message {
+  padding: 2%;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper {
+  padding-top: 2%;
+  display: flex;
+  justify-content: none;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper .user-pic {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .account-info p {
+  text-align: center;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .account-info p span {
+  color: #5a5a5a;
+  display: block;
+  margin-left: 20%;
+}
+.restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
+  color: #5a5a5a;
 }
