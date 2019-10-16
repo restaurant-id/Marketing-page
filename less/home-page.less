@@ -3,13 +3,14 @@ body {
 }
 
 .showcase {
+  // Showcase Image
   .bg-img {
     background: url(/img/showcase.jpg) no-repeat center center;
     width: 100%;
-    background-size: cover;
     height: 75%;
+    background-size: cover;
     position: relative;
-
+    // Dark overlay for showcase image
     &:before {
       content: "";
       position: absolute;
@@ -42,7 +43,7 @@ body {
       }
     }
 
-    // Icon embedded into input
+    // Icon embedded into input (positioning)
     .input-container {
       position: relative;
       padding: 0;
@@ -63,11 +64,11 @@ body {
 }
 
 // Main Content - Restaurants-Selection
-
 .restaurants-selection {
   height: 100%;
   .container {
-    .top-headings {
+    // Current location message
+    .current-location {
       .displayFlex(space-between, row, none, none);
       margin-top: 1%;
       color: @secondary-color;
@@ -81,6 +82,7 @@ body {
     .row {
       .displayFlex(space-between, row, none, none);
 
+      // Restaurant list
       .col-1 {
         height: 100%;
         width: 70%;
@@ -94,15 +96,16 @@ body {
         .boxes {
           .displayFlex(space-between, row, none, none);
           .box {
+            width: 100%;
+            height: 150px;
             margin: 1% 5% 1% 0;
             background: @secondary-color;
             padding: 10%;
-            width: 100%;
-            height: 150px;
           }
         }
       }
 
+      // Reviews
       .col-2 {
         margin-left: 5%;
         width: 55%;
