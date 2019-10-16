@@ -220,11 +220,26 @@ img {
 .navbar .container .right-side-ul li a i {
   color: black;
 }
-.showcase {
-  background: url(/img/showcase.jpg) no-repeat center;
+.showcase .bg-img {
+  background: url(/img/showcase.jpg) no-repeat center center;
+  width: 100%;
+  background-size: cover;
   height: 75%;
+  position: relative;
+}
+.showcase .bg-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000000, #000000);
+  opacity: 0.7;
+  z-index: 0;
 }
 .showcase .form-wrapper {
+  z-index: 1;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -236,6 +251,7 @@ img {
   padding: 10%;
 }
 .showcase .form-wrapper .btn {
+  z-index: 0;
   margin-left: 5%;
   text-decoration: none;
   padding: 18px 40px;

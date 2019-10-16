@@ -1,8 +1,26 @@
 .showcase {
-  background: url(/img/showcase.jpg) no-repeat center;
-  height: 75%;
+  .bg-img {
+    background: url(/img/showcase.jpg) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    height: 75%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right, #000000, #000000);
+      opacity: 0.7;
+      z-index: 0;
+    }
+  }
 
   .form-wrapper {
+    z-index: 1;
     height: 100%;
     .displayFlex(center, row, center, none);
 
@@ -11,6 +29,7 @@
     }
 
     .btn {
+      z-index: 0;
       margin-left: 5%;
       .primaryBtn(18px 40px, block, @primary-color, white);
 
