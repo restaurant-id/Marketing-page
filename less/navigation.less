@@ -1,3 +1,4 @@
+// After Login
 .navbar {
   .container {
     .displayFlex(space-around, row, none, none);
@@ -53,6 +54,71 @@
           i {
             color: black;
           }
+        }
+      }
+    }
+  }
+}
+
+// Before login
+.navbar-before-login {
+  .container {
+    .displayFlex(space-around, row, none, none);
+
+    ul {
+      padding: 1% 0;
+      .displayFlex(none, row, none, none);
+      width: 100%;
+
+      li {
+        padding: 0 1%;
+      }
+    }
+
+    .left-side-ul {
+      justify-content: start;
+
+      .border {
+        border-right: 1px solid @secondary-color;
+      }
+
+      li {
+        i {
+          padding: 10% 1%;
+          color: black;
+        }
+      }
+
+      .logo {
+        font-size: 3rem;
+        border-right: 1px solid @secondary-color;
+        padding-right: 2%;
+
+        a {
+          color: @primary-color;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .right-side-ul {
+      justify-content: end;
+      margin-top: 0.3%;
+
+      li {
+        .primary {
+          font-size: 2rem;
+          font-weight: 600;
+          text-decoration: none;
+          .primaryBtn(10px 20px, inline, #fff, @primary-color);
+        }
+
+        .secondary {
+          font-size: 2rem;
+          font-weight: 600;
+          text-decoration: none;
+          .primaryBtn(10px 20px, inline, @primary-color, none);
         }
       }
     }
