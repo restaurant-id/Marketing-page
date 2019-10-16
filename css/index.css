@@ -200,6 +200,7 @@ img {
 .navbar .container .left-side-ul .logo {
   font-size: 3rem;
   border-right: 1px solid #bbb;
+  padding-right: 2%;
 }
 .navbar .container .left-side-ul .logo a {
   color: #7601d6;
@@ -208,4 +209,14 @@ img {
 }
 .navbar .container .right-side-ul {
   justify-content: end;
+  margin-top: 0.3%;
+}
+.navbar .container .right-side-ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #7601d6;
+  font-weight: 600;
+}
+.navbar .container .right-side-ul li a i {
+  color: black;
 }
