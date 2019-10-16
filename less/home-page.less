@@ -57,3 +57,50 @@
     }
   }
 }
+
+// Main Content - Restaurants-Selection
+
+.restaurants-selection {
+  height: 100%;
+  .container {
+    .top-headings {
+      .displayFlex(space-between, row, none, none);
+      margin-top: 1%;
+      color: @secondary-color;
+
+      a {
+        color: @primary-color;
+        text-decoration: none;
+      }
+
+      h5 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+
+    .row {
+      .displayFlex(space-between, row, none, none);
+
+      .col-1 {
+        height: 100%;
+        width: 70%;
+
+        h1 {
+          font-size: 20px;
+          margin: 1% 0;
+        }
+
+        .boxes {
+          .displayFlex(space-between, row, none, none);
+          .box {
+            margin: 1% 2% 1% 0;
+            background: @secondary-color;
+            padding: 10%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -191,7 +191,7 @@ img {
   justify-content: start;
 }
 .navbar .container .left-side-ul .border {
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #5a5a5a;
 }
 .navbar .container .left-side-ul li i {
   padding: 10% 1%;
@@ -199,7 +199,7 @@ img {
 }
 .navbar .container .left-side-ul .logo {
   font-size: 3rem;
-  border-right: 1px solid #bbb;
+  border-right: 1px solid #5a5a5a;
   padding-right: 2%;
 }
 .navbar .container .left-side-ul .logo a {
@@ -277,4 +277,52 @@ img {
   top: 30%;
   bottom: 0;
   left: 8px;
+}
+.restaurants-selection {
+  height: 100%;
+}
+.restaurants-selection .container .top-headings {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+  margin-top: 1%;
+  color: #5a5a5a;
+}
+.restaurants-selection .container .top-headings a {
+  color: #7601d6;
+  text-decoration: none;
+}
+.restaurants-selection .container .top-headings h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.restaurants-selection .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.restaurants-selection .container .row .col-1 {
+  height: 100%;
+  width: 70%;
+}
+.restaurants-selection .container .row .col-1 h1 {
+  font-size: 20px;
+  margin: 1% 0;
+}
+.restaurants-selection .container .row .col-1 .boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.restaurants-selection .container .row .col-1 .boxes .box {
+  margin: 1% 2% 1% 0;
+  background: #5a5a5a;
+  padding: 10%;
+  width: 100%;
 }
