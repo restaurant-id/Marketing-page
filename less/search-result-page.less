@@ -65,6 +65,69 @@
             }
           }
         }
+
+        .col-1-photos {
+          border-bottom: 1px solid @dark-grey-color;
+          h2 {
+            margin: 5% 0;
+          }
+
+          img {
+            margin-bottom: 5%;
+          }
+        }
+
+        .col-1-menu {
+          border-bottom: 1px solid @dark-grey-color;
+          h2 {
+            margin: 5% 0;
+          }
+
+          img {
+            margin-bottom: 5%;
+          }
+        }
+      }
+
+      .col-2 {
+        width: 45%;
+        margin-left: 5%;
+
+        .col-container {
+          max-width: 400px;
+          margin: 0 auto;
+
+          .map {
+            margin: 5% auto;
+            background: url(/img/map.jpg);
+            background-size: cover;
+            height: 100px;
+            width: 100%;
+            border-radius: 5px;
+            .displayFlex(center, row, center, none);
+            h1 {
+              color: #fff;
+              text-align: center;
+              margin: auto 0;
+            }
+          }
+
+          .col-2-social {
+            .displayFlex(space-evenly, row, none, none);
+
+            .heading {
+              font-size: 25px;
+            }
+
+            .icons {
+              margin-top: 2%;
+              i {
+                padding: 0 5px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
       }
     }
   }
