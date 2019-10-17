@@ -164,6 +164,133 @@
   }
 }
 
+// SignIn/CreateAccount Modules
+.signInForm {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  z-index: 9;
+  display: none;
+
+  .form-container {
+    max-width: 500px;
+    padding: 10%;
+    background-color: white;
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 10%;
+      color: @light-grey-color;
+    }
+
+    .btn {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      background-color: @primary-color;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: 1px solid @light-grey-color;
+      border-radius: 5px;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .forget,
+    .create {
+      margin-bottom: 5%;
+      float: right;
+      color: @primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.signUpForm {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  z-index: 9;
+
+  .form-container {
+    max-width: 500px;
+    padding: 10%;
+    background-color: white;
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 10%;
+      color: @light-grey-color;
+    }
+
+    .btn {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      background-color: @primary-color;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: 1px solid @light-grey-color;
+      border-radius: 5px;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    .forget,
+    .create {
+      margin-bottom: 5%;
+      float: right;
+      color: @primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
 @media @tablet {
   .showcase {
     .form-wrapper {
@@ -189,6 +316,20 @@
         }
       }
     }
+  }
+  .signInForm {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    z-index: 9;
+    display: none;
+  }
+  .signUpForm {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    z-index: 9;
   }
 }
 @media @mobile {
@@ -239,5 +380,19 @@
         }
       }
     }
+  }
+  .signInForm {
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    z-index: 9;
+    display: none;
+  }
+  .signUpForm {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    z-index: 9;
   }
 }

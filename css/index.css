@@ -550,6 +550,116 @@ img {
 .restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
   color: #5a5a5a;
 }
+.signInForm {
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  z-index: 9;
+  display: none;
+}
+.signInForm .form-container {
+  max-width: 500px;
+  padding: 10%;
+  background-color: white;
+}
+.signInForm .form-container h1 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10%;
+  color: #5a5a5a;
+}
+.signInForm .form-container .btn {
+  background-color: #7601d6;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.signInForm .form-container .btn a {
+  color: white;
+  text-decoration: none;
+}
+.signInForm .form-container .btn:hover {
+  opacity: 1;
+}
+.signInForm .form-container input[type="text"],
+.signInForm .form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #5a5a5a;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+.signInForm .form-container input[type="text"]:focus,
+.signInForm .form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.signInForm .form-container .forget,
+.signInForm .form-container .create {
+  margin-bottom: 5%;
+  float: right;
+  color: #7601d6;
+  text-decoration: none;
+}
+.signUpForm {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  z-index: 9;
+}
+.signUpForm .form-container {
+  max-width: 500px;
+  padding: 10%;
+  background-color: white;
+}
+.signUpForm .form-container h1 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10%;
+  color: #5a5a5a;
+}
+.signUpForm .form-container .btn {
+  background-color: #7601d6;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.signUpForm .form-container .btn a {
+  color: white;
+  text-decoration: none;
+}
+.signUpForm .form-container .btn:hover {
+  opacity: 1;
+}
+.signUpForm .form-container input[type="text"],
+.signUpForm .form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 1px solid #5a5a5a;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+.signUpForm .form-container input[type="text"]:focus,
+.signUpForm .form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.signUpForm .form-container .forget,
+.signUpForm .form-container .create {
+  margin-bottom: 5%;
+  float: right;
+  color: #7601d6;
+  text-decoration: none;
+}
 @media (max-width: 1000px) {
   .showcase .form-wrapper {
     display: flex;
@@ -576,6 +686,20 @@ img {
   .restaurants-selection .container .current-location a {
     color: #7601d6;
     text-decoration: none;
+  }
+  .signInForm {
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    z-index: 9;
+    display: none;
+  }
+  .signUpForm {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 25%;
+    z-index: 9;
   }
 }
 @media (max-width: 760px) {
@@ -622,6 +746,20 @@ img {
   }
   .restaurants-selection .container .row .col-2 h5 {
     padding: 5% 0;
+  }
+  .signInForm {
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    z-index: 9;
+    display: none;
+  }
+  .signUpForm {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    z-index: 9;
   }
 }
 .search-header {

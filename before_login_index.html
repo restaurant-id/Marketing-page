@@ -28,17 +28,19 @@
           </li>
         </ul>
         <ul class="right-side-ul">
-          <li><a class="secondary" href="index.html">Sign In</a></li>
           <li>
-            <a class="primary" href="#!">Sign Up</a>
+            <a class="secondary" onclick="openFormSignIn()" href="#">Sign In</a>
+          </li>
+          <li>
+            <a class="primary" onclick="openFormSignUp()" href="#!">Sign Up</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Showcase -->
-    <section class="showcase">
-      <div class="bg-img">
+    <section onclick="closeFormSignIn()" class="showcase">
+      <div onclick="closeFormSignUp()" class="bg-img">
         <div class="container">
           <!-- Inputs -->
           <form class="form-wrapper">
@@ -168,5 +170,73 @@
       </nav>
       <p class="copyright">&copy; Copyright 2019 Restaurant Passport, LLC</p>
     </footer>
+    <!-- Form Modules -->
+    <!-- Sign In Form -->
+    <div class="signInForm" id="signInForm">
+      <form class="form-container">
+        <h1>Please Sign In.</h1>
+
+        <input type="text" placeholder="Enter Email" name="email" required />
+
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <a class="forget" href="#">Forget Password?</a>
+
+        <button type="submit" class="btn">
+          <a href="index.html">Sign In</a>
+        </button>
+
+        <p>
+          New to Restaurant Passport?
+          <a class="create" href="#">Create an Account.</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Sign Up Form-->
+    <div class="SignUpForm" id="SignUpForm">
+      <form class="form-container">
+        <h1>Welcome to Restaurant Passport!</h1>
+
+        <input
+          type="text"
+          placeholder="First Name..."
+          name="firstName"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Last Name..."
+          name="lastName"
+          required
+        />
+
+        <input type="text" placeholder="Email..." name="lastName" required />
+
+        <input type="password" placeholder="Password" name="psw" required />
+
+        <input
+          type="password"
+          placeholder="Re-enter Password..."
+          name="confirmPsw"
+          required
+        />
+
+        <button type="submit" class="btn">
+          <a href="index.html">Create Account</a>
+        </button>
+
+        <p>
+          Already have an account?
+          <a class="create" href="#">Sign in here</a>
+        </p>
+      </form>
+    </div>
+    <script src="js/app.js"></script>
   </body>
 </html>
