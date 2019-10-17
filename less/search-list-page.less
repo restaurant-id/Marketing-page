@@ -14,15 +14,12 @@
 
       .btn {
         z-index: 0;
-        margin-top: 0.1%;
         margin-left: 1.8%;
-        .primaryBtn(20px 40px, block, white, @primary-color);
+        .primaryBtn(25px 40px, block, white, @primary-color);
         border: none;
 
-        a {
-          text-decoration: none;
-          color: white;
-        }
+        text-decoration: none;
+        color: white;
       }
 
       // Icon embedded into input (positioning)
@@ -141,8 +138,9 @@
             }
 
             .tag {
-              margin-top: 0.3%;
+              margin-top: 1%;
               color: @light-grey-color;
+              text-decoration: none;
             }
 
             .close {
@@ -190,6 +188,10 @@
                           color: @light-grey-color;
                           font-size: 20px;
                         }
+                      }
+
+                      &:hover {
+                        opacity: 0.7;
                       }
                     }
 

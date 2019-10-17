@@ -33,9 +33,11 @@
       z-index: 0;
       margin-left: 5%;
       .primaryBtn(18px 40px, block, @primary-color, white);
+      text-decoration: none;
 
-      a {
-        text-decoration: none;
+      &:hover {
+        color: white;
+        background: @secondary-color;
       }
     }
 
@@ -120,6 +122,11 @@
           margin: 2% 0;
           border-radius: 10px;
           width: 100%;
+
+          &:hover {
+            background: desaturate(hsl(0, 0%, 96%), 20%);
+            cursor: pointer;
+          }
 
           .message {
             padding: 1%;

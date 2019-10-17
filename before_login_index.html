@@ -192,7 +192,12 @@
 
         <p>
           New to Restaurant Passport?
-          <a class="create" href="#">Create an Account.</a>
+          <a
+            onclick="openFormSignUp(), closeFormSignIn()"
+            class="create"
+            href="#"
+            >Create an Account.</a
+          >
         </p>
       </form>
     </div>
@@ -233,7 +238,12 @@
 
         <p>
           Already have an account?
-          <a class="create" href="#">Sign in here</a>
+          <a
+            onclick="openFormSignIn(), closeFormSignUp()"
+            class="create"
+            href="#"
+            >Sign in here</a
+          >
         </p>
       </form>
     </div>

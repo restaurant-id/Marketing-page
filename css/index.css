@@ -379,6 +379,9 @@ img {
   text-decoration: none;
   font-size: 25px;
 }
+.main-footer .footer-nav ul li a:hover {
+  opacity: 0.7;
+}
 @media (max-width: 760px) {
   .main-footer {
     max-width: 100%;
@@ -579,14 +582,15 @@ img {
 .showcase .form-wrapper .btn {
   z-index: 0;
   margin-left: 5%;
-  text-decoration: none;
   padding: 18px 40px;
   display: block;
   color: #7601d6;
   background: white;
-}
-.showcase .form-wrapper .btn a {
   text-decoration: none;
+}
+.showcase .form-wrapper .btn:hover {
+  color: white;
+  background: orange;
 }
 .showcase .form-wrapper .input-container {
   position: relative;
@@ -665,6 +669,10 @@ img {
   margin: 2% 0;
   border-radius: 10px;
   width: 100%;
+}
+.restaurants-selection .container .row .col-2 .card:hover {
+  background: hsl(0, 0%, 96%);
+  cursor: pointer;
 }
 .restaurants-selection .container .row .col-2 .card .message {
   padding: 1%;
@@ -781,7 +789,10 @@ img {
   background-size: cover;
   height: 40%;
 }
-.search-result-showcase .stamp {
+.search-result-showcase a {
+  color: #333;
+}
+.search-result-showcase a .stamp {
   border-radius: 10px;
   margin: 2%;
   float: right;
@@ -794,10 +805,10 @@ img {
   flex-flow: none;
   background: #fff;
 }
-.search-result-showcase .stamp p {
+.search-result-showcase a .stamp p {
   margin-top: 3%;
 }
-.search-result-showcase .stamp i {
+.search-result-showcase a .stamp i {
   margin-top: 2%;
   color: orange;
 }
@@ -888,6 +899,7 @@ img {
   margin: auto 0;
 }
 .search-result-main .container .row .col-2 .col-container .col-2-social {
+  border-bottom: 1px dotted #5a5a5a;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -903,6 +915,49 @@ img {
 .search-result-main .container .row .col-2 .col-container .col-2-social .icons i {
   padding: 0 5px;
   font-size: 20px;
+}
+.search-result-main .container .row .col-2 .card {
+  background: #fff;
+  padding: 1% 2%;
+  margin: 5% 0;
+  border-radius: 10px;
+  width: 100%;
+}
+.search-result-main .container .row .col-2 .card .message {
+  padding: 1%;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper {
+  padding-top: 2%;
+  display: flex;
+  justify-content: none;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper .user-pic {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper .user-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper .user-info .account-info p {
+  text-align: center;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper .user-info .account-info p span {
+  color: #5a5a5a;
+  display: block;
+  margin-left: 25%;
+  font-size: 14px;
+}
+.search-result-main .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
+  color: #5a5a5a;
 }
 .search-header {
   background: url(/img/header.jpg) center;
@@ -923,16 +978,11 @@ img {
 }
 .search-header .container .form-wrapper .btn {
   z-index: 0;
-  margin-top: 0.1%;
   margin-left: 1.8%;
-  text-decoration: none;
-  padding: 20px 40px;
+  padding: 25px 40px;
   display: block;
-  color: white;
   background: #7601d6;
   border: none;
-}
-.search-header .container .form-wrapper .btn a {
   text-decoration: none;
   color: white;
 }
@@ -1049,8 +1099,9 @@ img {
   font-size: 2rem;
 }
 .search-main-section .container .row .col-2 .col-container .col-header .tag {
-  margin-top: 0.3%;
+  margin-top: 1%;
   color: #5a5a5a;
+  text-decoration: none;
 }
 .search-main-section .container .row .col-2 .col-container .col-header .close {
   margin-top: 1%;
@@ -1100,6 +1151,9 @@ img {
   display: block;
   color: #5a5a5a;
   font-size: 20px;
+}
+.search-main-section .container .row .col-2 .col-container .restaurants-wrapper .restaurant-card .flex-wrapper .restaurant-info-wrapper .restaurant-info a:hover {
+  opacity: 0.7;
 }
 .search-main-section .container .row .col-2 .col-container .restaurants-wrapper .restaurant-card .flex-wrapper .restaurant-info-wrapper .restaurant-info .recommended {
   color: #7601d6;
