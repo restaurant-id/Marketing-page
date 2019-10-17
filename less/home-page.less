@@ -163,3 +163,54 @@
     }
   }
 }
+
+@media @mobile {
+  .showcase {
+    .form-wrapper {
+      .displayFlex(center, column, center, none);
+
+      .btn {
+        margin-top: 5%;
+      }
+    }
+  }
+  .restaurants-selection {
+    .container {
+      // Current location message
+      .current-location {
+        .displayFlex(space-between, row, none, none);
+        padding-top: 1%;
+        color: @light-grey-color;
+
+        a {
+          color: @primary-color;
+          text-decoration: none;
+        }
+      }
+
+      .row {
+        .displayFlex(center, column, center, none);
+
+        // Restaurant list
+        .col-1 {
+          height: 100%;
+          width: 80%;
+
+          h1 {
+            text-align: center;
+          }
+        }
+
+        // Reviews
+        .col-2 {
+          margin-left: 0;
+          width: 80%;
+
+          h5 {
+            padding: 5% 0;
+          }
+        }
+      }
+    }
+  }
+}
