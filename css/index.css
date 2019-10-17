@@ -521,24 +521,70 @@ img {
   flex-flow: none;
 }
 .search-main-section .container .row .col-1 {
+  margin-top: 2%;
   border: 1px solid black;
-  height: 300px;
+  height: 100%;
   width: 30%;
 }
-.search-main-section .container .row .col-1 .map {
+.search-main-section .container .row .col-1 .col-container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.search-main-section .container .row .col-1 .col-container .map {
   margin: auto;
   background: url(/img/map.jpg);
   background-size: cover;
-  height: 30%;
-  width: 70%;
+  height: 100px;
+  width: 100%;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   flex-flow: none;
 }
-.search-main-section .container .row .col-1 .map h1 {
+.search-main-section .container .row .col-1 .col-container .map h1 {
   color: #fff;
   text-align: center;
   margin: auto 0;
+}
+.search-main-section .container .row .col-1 .col-container .price .label-price {
+  margin: 5% 0 1% 0;
+  color: #5a5a5a;
+  font-weight: bold;
+}
+.search-main-section .container .row .col-1 .col-container .price .price-content ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.search-main-section .container .row .col-1 .col-container .price .price-content ul .border {
+  border-right: 1px solid #5a5a5a;
+}
+.search-main-section .container .row .col-1 .col-container .price .price-content ul li {
+  padding: 1% 2%;
+}
+.search-main-section .container .row .col-1 .col-container .checkbox-wrapper {
+  margin: 5% 0;
+}
+.search-main-section .container .row .col-1 .col-container .checkbox-wrapper h5 {
+  font-size: 20px;
+}
+.search-main-section .container .row .col-1 .col-container .checkbox-wrapper .checkboxes .box {
+  display: flex;
+  justify-content: none;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.search-main-section .container .row .col-1 .col-container .checkbox-wrapper .checkboxes .box p {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.search-main-section .container .row .col-1 .col-container .checkbox-wrapper .checkboxes .more {
+  font-size: 15px;
+  margin-left: 10%;
+  text-decoration: none;
 }
