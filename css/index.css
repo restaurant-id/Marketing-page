@@ -465,12 +465,12 @@ img {
 .restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
   color: #5a5a5a;
 }
-.header {
+.search-header {
   background: url(/img/header.jpg) center;
   background-size: cover;
   height: 15%;
 }
-.header .container .form-wrapper {
+.search-header .container .form-wrapper {
   z-index: 1;
   height: 100%;
   display: flex;
@@ -479,10 +479,10 @@ img {
   align-items: center;
   flex-flow: none;
 }
-.header .container .form-wrapper input {
+.search-header .container .form-wrapper input {
   padding: 10%;
 }
-.header .container .form-wrapper .btn {
+.search-header .container .form-wrapper .btn {
   z-index: 0;
   margin-top: 0.1%;
   margin-left: 1.8%;
@@ -493,21 +493,21 @@ img {
   background: #7601d6;
   border: none;
 }
-.header .container .form-wrapper .btn a {
+.search-header .container .form-wrapper .btn a {
   text-decoration: none;
   color: white;
 }
-.header .container .form-wrapper .input-container {
+.search-header .container .form-wrapper .input-container {
   position: relative;
   padding: 0;
   margin: 0;
 }
-.header .container .form-wrapper .input {
+.search-header .container .form-wrapper .input {
   height: 20px;
   margin: 0;
   padding-left: 30px;
 }
-.header .container .form-wrapper #input-icon {
+.search-header .container .form-wrapper #input-icon {
   position: absolute;
   top: 30%;
   bottom: 0;
