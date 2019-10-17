@@ -206,3 +206,84 @@
     }
   }
 }
+
+@media @mobile {
+  .search-header {
+    height: 50%;
+    .container {
+      .form-wrapper {
+        .displayFlex(center, column, center, none);
+
+        .btn {
+          z-index: 0;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+
+  .search-main-section {
+    .container {
+      .row {
+        .displayFlex(center, column, none, none);
+        // Column One
+        .col-1 {
+          margin-top: 2%;
+          height: 100%;
+          width: 100%;
+        }
+        // Column Two
+        .col-2 {
+          margin-left: 0;
+          margin: 0 auto;
+          width: 80%;
+          height: 100%;
+          // Column Container
+          .col-container {
+            // Cards
+            .restaurants-wrapper {
+              .restaurant-card {
+                padding: 1% 2%;
+                margin: 5% 0;
+
+                .flex-wrapper {
+                  .displayFlex(none, row, none, none);
+
+                  .restaurant-info-wrapper {
+                    .displayFlex(space-between, row, none, none);
+
+                    .restaurant-info {
+                      margin-left: 2%;
+                      .title {
+                        color: @secondary-color;
+                        font-size: 3rem;
+                        span {
+                          display: block;
+                          color: @light-grey-color;
+                          font-size: 20px;
+                        }
+                      }
+                      .recommended {
+                        color: @primary-color;
+                      }
+                    }
+                    .priced {
+                      margin-top: 6%;
+                      p {
+                        color: @light-grey-color;
+                      }
+
+                      .fa-user {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
