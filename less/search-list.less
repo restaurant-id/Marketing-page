@@ -51,6 +51,10 @@
     .row {
       .displayFlex(none, row, none, none);
       .col-1 {
+        margin-top: 2%;
+        // border: 1px solid black;
+        height: 100%;
+        width: 30%;
         .col-container {
           max-width: 350px;
           margin: 0 auto;
@@ -112,10 +116,86 @@
             }
           }
         }
-        margin-top: 2%;
-        border: 1px solid black;
+      }
+      .col-2 {
+        // border: 1px solid black;
+        margin-left: 5%;
+        width: 100%;
         height: 100%;
-        width: 30%;
+        .col-container {
+          max-width: 1000px;
+          margin: 0 auto;
+          margin-top: 2%;
+          .col-header {
+            .displayFlex(none, row, none, none);
+            border-bottom: 1px solid @light-grey-color;
+
+            .filter {
+              margin-right: 1%;
+              font-size: 2rem;
+            }
+
+            .tag {
+              margin-top: 0.3%;
+              color: @light-grey-color;
+            }
+
+            .close {
+              margin-top: 1%;
+              margin-left: 0.5%;
+              color: @light-grey-color;
+            }
+          }
+
+          .restaurants-wrapper {
+            h5 {
+              font-size: 2rem;
+              margin: 1% 0 0 0;
+            }
+            .restaurant-card {
+              padding: 1% 2%;
+              margin: 1% 0;
+              border-radius: 10px;
+              width: 100%;
+
+              .flex-wrapper {
+                .displayFlex(none, row, none, none);
+
+                .restaurant-pic {
+                  width: 30%;
+                  height: 30%;
+                }
+
+                .restaurant-info-wrapper {
+                  width: 100%;
+                  .displayFlex(space-between, row, none, none);
+
+                  .restaurant-info {
+                    margin-left: 2%;
+                    .title {
+                      color: @secondary-color;
+                      font-size: 3rem;
+                      span {
+                        display: block;
+                        color: @light-grey-color;
+                        font-size: 20px;
+                      }
+                    }
+                    .recommended {
+                      color: @primary-color;
+                    }
+                  }
+                  .priced {
+                    margin-top: 6%;
+                    p {
+                      color: @light-grey-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
