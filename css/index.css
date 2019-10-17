@@ -218,7 +218,7 @@ img {
 .navbar .container .right-side-ul li a {
   font-size: 2rem;
   text-decoration: none;
-  color: #7601d6;
+  color: orange;
   font-weight: 600;
 }
 .navbar .container .right-side-ul li a i {
@@ -274,22 +274,21 @@ img {
   padding: 10px 20px;
   display: inline;
   color: #fff;
-  background: #7601d6;
+  background: orange;
 }
 .navbar-before-login .container .right-side-ul li .secondary {
   font-size: 2rem;
-  font-weight: 600;
   text-decoration: none;
   padding: 10px 20px;
   display: inline;
-  color: #7601d6;
+  color: #333;
   background: none;
 }
 .main-footer {
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 5%;
   background: #333;
-  height: 15%;
 }
 .main-footer .copyright {
   text-align: center;
@@ -418,7 +417,7 @@ img {
 }
 .restaurants-selection .container .row .col-2 h5 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #5a5a5a;
   font-weight: bold;
   padding: 1% 0;
@@ -431,7 +430,7 @@ img {
   width: 100%;
 }
 .restaurants-selection .container .row .col-2 .card .message {
-  padding: 2%;
+  padding: 1%;
 }
 .restaurants-selection .container .row .col-2 .card .flex-wrapper {
   padding-top: 2%;
@@ -465,4 +464,81 @@ img {
 }
 .restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
   color: #5a5a5a;
+}
+.header {
+  background: url(/img/header.jpg) center;
+  background-size: cover;
+  height: 15%;
+}
+.header .container .form-wrapper {
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.header .container .form-wrapper input {
+  padding: 10%;
+}
+.header .container .form-wrapper .btn {
+  z-index: 0;
+  margin-top: 0.1%;
+  margin-left: 1.8%;
+  text-decoration: none;
+  padding: 20px 40px;
+  display: block;
+  color: white;
+  background: #7601d6;
+  border: none;
+}
+.header .container .form-wrapper .btn a {
+  text-decoration: none;
+  color: white;
+}
+.header .container .form-wrapper .input-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.header .container .form-wrapper .input {
+  height: 20px;
+  margin: 0;
+  padding-left: 30px;
+}
+.header .container .form-wrapper #input-icon {
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 8px;
+}
+.search-main-section .container .row {
+  display: flex;
+  justify-content: none;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.search-main-section .container .row .col-1 {
+  border: 1px solid black;
+  height: 300px;
+  width: 30%;
+}
+.search-main-section .container .row .col-1 .map {
+  margin: auto;
+  background: url(/img/map.jpg);
+  background-size: cover;
+  height: 30%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.search-main-section .container .row .col-1 .map h1 {
+  color: #fff;
+  text-align: center;
+  margin: auto 0;
 }

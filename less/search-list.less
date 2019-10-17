@@ -1,0 +1,73 @@
+.header {
+  background: url(/img/header.jpg) center;
+  background-size: cover;
+  height: 15%;
+  .container {
+    .form-wrapper {
+      z-index: 1;
+      height: 100%;
+      .displayFlex(center, row, center, none);
+
+      input {
+        padding: 10%;
+      }
+
+      .btn {
+        z-index: 0;
+        margin-top: 0.1%;
+        margin-left: 1.8%;
+        .primaryBtn(20px 40px, block, white, @primary-color);
+        border: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      // Icon embedded into input (positioning)
+      .input-container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+      .input {
+        height: 20px;
+        margin: 0;
+        padding-left: 30px;
+      }
+      #input-icon {
+        position: absolute;
+        top: 30%;
+        bottom: 0;
+        left: 8px;
+      }
+    }
+  }
+}
+
+.search-main-section {
+  .container {
+    .row {
+      .displayFlex(none, row, none, none);
+      .col-1 {
+        border: 1px solid black;
+        height: 300px;
+        width: 30%;
+        .map {
+          margin: auto;
+          background: url(/img/map.jpg);
+          background-size: cover;
+          height: 30%;
+          width: 70%;
+          .displayFlex(center, row, center, none);
+          h1 {
+            color: #fff;
+            text-align: center;
+            margin: auto 0;
+          }
+        }
+      }
+    }
+  }
+}
