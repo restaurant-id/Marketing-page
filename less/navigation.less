@@ -125,6 +125,42 @@
   }
 }
 
+@media @tablet {
+  // Before login
+  .navbar-before-login {
+    .container {
+      .displayFlex(none, column, none, none);
+
+      .left-side-ul {
+        justify-content: center;
+      }
+
+      .right-side-ul {
+        justify-content: center;
+
+        li {
+          .primary {
+            .primaryBtn(10px 20px, inline, @secondary-color, none);
+          }
+        }
+      }
+    }
+  }
+  .navbar {
+    .container {
+      .displayFlex(none, column, none, none);
+
+      .left-side-ul {
+        justify-content: center;
+      }
+
+      .right-side-ul {
+        justify-content: center;
+      }
+    }
+  }
+}
+
 @media @mobile {
   // Before login
   .navbar-before-login {

@@ -207,6 +207,38 @@
   }
 }
 
+@media @tablet {
+  .search-header {
+    height: 50%;
+    .container {
+      .form-wrapper {
+        .displayFlex(center, column, center, none);
+
+        .btn {
+          z-index: 0;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+  .search-main-section {
+    .container {
+      max-width: 700px;
+
+      .priced {
+        margin-top: 6%;
+        p {
+          color: @light-grey-color;
+        }
+
+        .fa-user {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 @media @mobile {
   .search-header {
     height: 50%;

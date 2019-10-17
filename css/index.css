@@ -284,7 +284,42 @@ img {
   color: #333;
   background: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  .navbar-before-login .container {
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+    align-items: none;
+    flex-flow: none;
+  }
+  .navbar-before-login .container .left-side-ul {
+    justify-content: center;
+  }
+  .navbar-before-login .container .right-side-ul {
+    justify-content: center;
+  }
+  .navbar-before-login .container .right-side-ul li .primary {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline;
+    color: orange;
+    background: none;
+  }
+  .navbar .container {
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+    align-items: none;
+    flex-flow: none;
+  }
+  .navbar .container .left-side-ul {
+    justify-content: center;
+  }
+  .navbar .container .right-side-ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 760px) {
   .navbar-before-login .container {
     display: flex;
     justify-content: none;
@@ -344,7 +379,7 @@ img {
   text-decoration: none;
   font-size: 25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 760px) {
   .main-footer {
     max-width: 100%;
     margin-top: 5%;
@@ -515,7 +550,35 @@ img {
 .restaurants-selection .container .row .col-2 .card .flex-wrapper .user-info .time-posted p {
   color: #5a5a5a;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  .showcase .form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .showcase .form-wrapper .btn {
+    margin-top: 5%;
+  }
+  .restaurants-selection .container {
+    max-width: 700px;
+  }
+  .restaurants-selection .container .current-location {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: none;
+    flex-flow: none;
+    padding-top: 1%;
+    color: #5a5a5a;
+  }
+  .restaurants-selection .container .current-location a {
+    color: #7601d6;
+    text-decoration: none;
+  }
+}
+@media (max-width: 760px) {
   .showcase .form-wrapper {
     display: flex;
     justify-content: center;
@@ -764,7 +827,35 @@ img {
 .search-main-section .container .row .col-2 .col-container .restaurants-wrapper .restaurant-card .flex-wrapper .restaurant-info-wrapper .priced p {
   color: #5a5a5a;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+  .search-header {
+    height: 50%;
+  }
+  .search-header .container .form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .search-header .container .form-wrapper .btn {
+    z-index: 0;
+    margin-top: 5%;
+  }
+  .search-main-section .container {
+    max-width: 700px;
+  }
+  .search-main-section .container .priced {
+    margin-top: 6%;
+  }
+  .search-main-section .container .priced p {
+    color: #5a5a5a;
+  }
+  .search-main-section .container .priced .fa-user {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
   .search-header {
     height: 50%;
   }

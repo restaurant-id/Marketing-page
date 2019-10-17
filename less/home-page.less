@@ -164,6 +164,33 @@
   }
 }
 
+@media @tablet {
+  .showcase {
+    .form-wrapper {
+      .displayFlex(center, column, center, none);
+
+      .btn {
+        margin-top: 5%;
+      }
+    }
+  }
+  .restaurants-selection {
+    .container {
+      max-width: 700px;
+      // Current location message
+      .current-location {
+        .displayFlex(space-between, row, none, none);
+        padding-top: 1%;
+        color: @light-grey-color;
+
+        a {
+          color: @primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 @media @mobile {
   .showcase {
     .form-wrapper {
