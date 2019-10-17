@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: "Roboto", sans-serif;
+  background: #dddddd;
 }
 h1,
 h2,
@@ -167,6 +168,9 @@ img {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+.navbar {
+  background: #fff;
 }
 .navbar .container {
   display: flex;
@@ -281,8 +285,30 @@ img {
   color: #7601d6;
   background: none;
 }
-body {
-  background: #dddddd;
+.main-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #333;
+  height: 15%;
+}
+.main-footer .copyright {
+  text-align: center;
+  color: #fff;
+}
+.main-footer .footer-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+}
+.main-footer .footer-nav ul li {
+  padding: 2%;
+}
+.main-footer .footer-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
 }
 .showcase .bg-img {
   background: url(/img/showcase.jpg) no-repeat center center;
@@ -342,16 +368,13 @@ body {
   bottom: 0;
   left: 8px;
 }
-.restaurants-selection {
-  height: 100%;
-}
 .restaurants-selection .container .current-location {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: none;
   flex-flow: none;
-  margin-top: 1%;
+  padding-top: 1%;
   color: #5a5a5a;
 }
 .restaurants-selection .container .current-location a {
@@ -362,7 +385,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: none;
+  align-items: center;
   flex-flow: none;
 }
 .restaurants-selection .container .row .col-1 {
@@ -385,8 +408,8 @@ body {
   width: 100%;
   height: 150px;
   margin: 1% 5% 1% 0;
-  background: #5a5a5a;
-  padding: 10%;
+  background: #ccc;
+  padding: 15%;
 }
 .restaurants-selection .container .row .col-2 {
   margin-left: 5%;
