@@ -1,0 +1,8 @@
+.search-result-showcase {
+  background: url(/img/Result-showcase.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.search-result-showcase .stamp {
+  background: #fff;
+}
