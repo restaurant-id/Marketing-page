@@ -17,9 +17,12 @@
         margin-left: 1.8%;
         .primaryBtn(25px 40px, block, white, @primary-color);
         border: none;
-
         text-decoration: none;
         color: white;
+
+        &:hover {
+          background: desaturate(hsl(258, 100%, 32%), 20%);
+        }
       }
 
       // Icon embedded into input (positioning)
@@ -83,7 +86,7 @@
                 .displayFlex(center, row, center, none);
 
                 .border {
-                  border-right: 1px solid @light-grey-color;
+                  border-right: @border-light;
                 }
 
                 li {
@@ -130,7 +133,7 @@
           // Column header
           .col-header {
             .displayFlex(none, row, none, none);
-            border-bottom: 1px solid @light-grey-color;
+            border-bottom: @border-light;
 
             .filter {
               margin-right: 1%;
