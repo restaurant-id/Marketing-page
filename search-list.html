@@ -1,0 +1,325 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurant Passport | Search Lists</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5192607be2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="left-side-ul">
+          <li class="logo">
+            <a href="index.html">Restaurant Passport</a>
+          </li>
+          <li>
+            <a href="#!"><i class="fas fa-map-marked-alt fa-2x"></i></a>
+          </li>
+          <li class="border">
+            <a href="#!"><i class="fas fa-chevron-down fa-2x"></i></a>
+          </li>
+        </ul>
+        <ul class="right-side-ul">
+          <li>
+            <a class="user" href="#!">Hi, Ben</a>
+            <a class="signout" id="SignOut" href="before_login_index.html"
+              >Sign Out</a
+            >
+          </li>
+          <li>
+            <a onclick="openSignOut()" href="#"
+              ><i class="fas fa-chevron-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section onclick="closeSignOut()" class="search-header">
+      <div class="container">
+        <!-- Inputs -->
+        <form class="form-wrapper">
+          <div class="input-container">
+            <input class="input" type="text" placeholder="Location..." />
+            <i class="fas fa-map-marked-alt fa-2x" id="input-icon"></i>
+          </div>
+          <div class="input-container">
+            <input class="input" type="text" placeholder="Cuisine..." />
+            <i class="fas fa-utensils fa-2x" id="input-icon"></i>
+          </div>
+          <div class="input-container">
+            <input class="input" type="text" placeholder="Budget..." />
+            <i class="fas fa-money-check-alt fa-2x" id="input-icon"></i>
+          </div>
+          <a class="btn" href="#!">Search</a>
+        </form>
+      </div>
+    </section>
+
+    <main class="search-main-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <div class="col-container">
+              <div class="map">
+                <h1>Map View</h1>
+              </div>
+              <div class="price">
+                <p class="label-price">Price</p>
+                <div class="price-content">
+                  <ul>
+                    <li class="border">
+                      <i class="fas fa-money-check-alt fa-3x"></i>
+                    </li>
+                    <li><i class="fas fa-money-check-alt fa-3x"></i></li>
+                    <li class="border">
+                      <i class="fas fa-money-check-alt fa-3x"></i>
+                    </li>
+                    <li><i class="fas fa-money-check-alt fa-3x"></i></li>
+                    <li><i class="fas fa-money-check-alt fa-3x"></i></li>
+                    <li><i class="fas fa-money-check-alt fa-3x"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="checkbox-wrapper">
+                <h5>Cuisine</h5>
+                <div class="checkboxes">
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>American</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Italian</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Thai</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Steakhouse</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Pizzeria</p>
+                  </div>
+                  <a class="more" href="#"
+                    ><i class="fas fa-plus"></i> <span>More</span></a
+                  >
+                </div>
+              </div>
+              <div class="checkbox-wrapper">
+                <h5>Specials</h5>
+                <div class="checkboxes">
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>All Specials</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Happy Hour</p>
+                  </div>
+                </div>
+              </div>
+              <div class="checkbox-wrapper">
+                <h5>Seating Options</h5>
+                <div class="checkboxes">
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Bar</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Counter</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Standard</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>High Top</p>
+                  </div>
+                  <div class="box">
+                    <input type="checkbox" />
+                    <p>Outdoor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="col-container">
+              <div class="col-header">
+                <p class="filter">Filters:</p>
+                <a href="#!" class="tag">Minneapolis</a>
+                <a class="close" href="#"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="restaurants-wrapper">
+                <h5>Featured Restaurant</h5>
+                <div class="restaurant-card-wrapper">
+                  <div class="restaurant-card">
+                    <div class="flex-wrapper">
+                      <img
+                        class="restaurant-pic"
+                        src="/img/restaurant-card.jpg"
+                        alt="user"
+                      />
+                      <div class="restaurant-info-wrapper">
+                        <div class="restaurant-info">
+                          <a href="search-result.html">
+                            <p class="title">
+                              Restaurant Name
+                              <span>Rating</span>
+                              <span>Type</span>
+                            </p>
+                          </a>
+
+                          <p class="recommended">
+                            647 People Recommended. Friends...
+                          </p>
+                        </div>
+                        <div class="priced">
+                          <p>Price</p>
+                          <p>Location</p>
+                          <p>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="restaurant-card-wrapper">
+                  <div class="restaurant-card">
+                    <div class="flex-wrapper">
+                      <img
+                        class="restaurant-pic"
+                        src="/img/restaurant-card.jpg"
+                        alt="user"
+                      />
+                      <div class="restaurant-info-wrapper">
+                        <div class="restaurant-info">
+                          <a href="search-result.html">
+                            <p class="title">
+                              Restaurant Name
+                              <span>Rating</span>
+                              <span>Type</span>
+                            </p>
+                          </a>
+                          <p class="recommended">
+                            647 People Recommended. Friends...
+                          </p>
+                        </div>
+                        <div class="priced">
+                          <p>Price</p>
+                          <p>Location</p>
+                          <p>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="restaurant-card-wrapper">
+                  <div class="restaurant-card">
+                    <div class="flex-wrapper">
+                      <img
+                        class="restaurant-pic"
+                        src="/img/restaurant-card.jpg"
+                        alt="user"
+                      />
+                      <div class="restaurant-info-wrapper">
+                        <div class="restaurant-info">
+                          <a href="search-result.html">
+                            <p class="title">
+                              Restaurant Name
+                              <span>Rating</span>
+                              <span>Type</span>
+                            </p>
+                          </a>
+                          <p class="recommended">
+                            647 People Recommended. Friends...
+                          </p>
+                        </div>
+                        <div class="priced">
+                          <p>Price</p>
+                          <p>Location</p>
+                          <p>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="restaurant-card-wrapper">
+                  <div class="restaurant-card">
+                    <div class="flex-wrapper">
+                      <img
+                        class="restaurant-pic"
+                        src="/img/restaurant-card.jpg"
+                        alt="user"
+                      />
+                      <div class="restaurant-info-wrapper">
+                        <div class="restaurant-info">
+                          <a href="search-result.html">
+                            <p class="title">
+                              Restaurant Name
+                              <span>Rating</span>
+                              <span>Type</span>
+                            </p>
+                          </a>
+                          <p class="recommended">
+                            647 People Recommended. Friends...
+                          </p>
+                        </div>
+                        <div class="priced">
+                          <p>Price</p>
+                          <p>Location</p>
+                          <p>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                            <i class="fas fa-user fa-2x"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; Copyright 2019 Restaurant Passport, LLC</p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

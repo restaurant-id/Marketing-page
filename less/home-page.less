@@ -1,0 +1,254 @@
+.showcase {
+  // Showcase Image
+  .bg-img {
+    background: url(/img/showcase.jpg) no-repeat center center;
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+    position: relative;
+    // Dark overlay for showcase image
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to bottom right,
+        @default-color,
+        @default-color
+      );
+      opacity: 0.7;
+      z-index: 0;
+    }
+  }
+
+  .form-wrapper {
+    z-index: 1;
+    height: 100%;
+    .displayFlex(center, row, center, none);
+
+    input {
+      padding: 10%;
+    }
+
+    .btn {
+      z-index: 0;
+      margin-left: 5%;
+      .primaryBtn(18px 40px, block, @primary-color, @base-color);
+      text-decoration: none;
+
+      &:hover {
+        color: @base-color;
+        background: @secondary-color;
+      }
+    }
+
+    // Icon embedded into input (positioning)
+    .input-container {
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+    .input {
+      height: 20px;
+      margin: 0;
+      padding-left: 30px;
+    }
+    #input-icon {
+      position: absolute;
+      top: 30%;
+      bottom: 0;
+      left: 8px;
+    }
+  }
+}
+
+// Main Content - Restaurants-Selection
+.restaurants-selection {
+  .container {
+    // Current location message
+    .current-location {
+      .displayFlex(space-between, row, none, none);
+      padding-top: 1%;
+      color: @light-grey-color;
+
+      a {
+        color: @primary-color;
+        text-decoration: none;
+      }
+    }
+
+    .row {
+      .displayFlex(space-between, row, center, none);
+
+      // Restaurant list
+      .col-1 {
+        height: 100%;
+        width: 70%;
+
+        h1 {
+          font-size: 20px;
+          margin: 2% 0;
+          color: @dark-grey-color;
+        }
+
+        .boxes {
+          .displayFlex(space-between, row, none, none);
+          .box {
+            width: 100%;
+            height: 150px;
+            margin: 1% 5% 1% 0;
+            background: #ccc;
+            padding: 15%;
+          }
+        }
+      }
+
+      // Reviews
+      .col-2 {
+        margin-left: 5%;
+        width: 55%;
+        height: 100%;
+
+        h5 {
+          text-align: center;
+          font-size: 2rem;
+          color: @light-grey-color;
+          font-weight: bold;
+          padding: 1% 0;
+        }
+
+        .card {
+          background: @cards-color;
+          padding: 1% 2%;
+          margin: 2% 0;
+          border-radius: 10px;
+          width: 100%;
+
+          &:hover {
+            background: desaturate(hsl(0, 0%, 96%), 20%);
+            cursor: pointer;
+          }
+
+          .message {
+            padding: 1%;
+          }
+
+          .flex-wrapper {
+            padding-top: 2%;
+            .displayFlex(none, row, none, none);
+
+            .user-pic {
+              width: 15%;
+              height: 15%;
+              border-radius: 50%;
+            }
+
+            .user-info {
+              width: 100%;
+              .displayFlex(space-between, row, none, none);
+
+              .account-info {
+                p {
+                  text-align: center;
+
+                  span {
+                    color: @light-grey-color;
+                    display: block;
+                    margin-left: 25%;
+                    font-size: 14px;
+                  }
+                }
+              }
+              .time-posted {
+                p {
+                  color: @light-grey-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @tablet {
+  .showcase {
+    .form-wrapper {
+      .displayFlex(center, column, center, none);
+
+      .btn {
+        margin-top: 5%;
+      }
+    }
+  }
+  .restaurants-selection {
+    .container {
+      max-width: 700px;
+      // Current location message
+      .current-location {
+        .displayFlex(space-between, row, none, none);
+        padding-top: 1%;
+        color: @light-grey-color;
+
+        a {
+          color: @primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media @mobile {
+  .showcase {
+    .form-wrapper {
+      .displayFlex(center, column, center, none);
+
+      .btn {
+        margin-top: 5%;
+      }
+    }
+  }
+  .restaurants-selection {
+    .container {
+      // Current location message
+      .current-location {
+        .displayFlex(space-between, row, none, none);
+        padding-top: 1%;
+        color: @light-grey-color;
+
+        a {
+          color: @primary-color;
+          text-decoration: none;
+        }
+      }
+
+      .row {
+        .displayFlex(center, column, center, none);
+
+        // Restaurant list
+        .col-1 {
+          height: 100%;
+          width: 80%;
+
+          h1 {
+            text-align: center;
+          }
+        }
+
+        // Reviews
+        .col-2 {
+          margin-left: 0;
+          width: 80%;
+
+          h5 {
+            padding: 5% 0;
+          }
+        }
+      }
+    }
+  }
+}
