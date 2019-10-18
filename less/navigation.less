@@ -1,6 +1,6 @@
 // After Login
 .navbar {
-  background: #fff;
+  background: @navigation-color;
   .container {
     .displayFlex(space-around, row, none, none);
 
@@ -24,7 +24,7 @@
       li {
         i {
           padding: 10% 1%;
-          color: black;
+          color: @default-color;
         }
       }
 
@@ -50,11 +50,10 @@
           font-size: 2rem;
           text-decoration: none;
           color: @secondary-color;
-          font-weight: 600;
-
-          i {
-            color: black;
-          }
+        }
+        .fa-chevron-down {
+          color: @default-color;
+          font-size: 20px;
         }
       }
     }
@@ -86,7 +85,7 @@
       li {
         i {
           padding: 10% 1%;
-          color: black;
+          color: @dark-grey-color;
         }
       }
 
@@ -112,7 +111,7 @@
           font-size: 2rem;
           font-weight: 600;
           text-decoration: none;
-          .primaryBtn(10px 20px, inline, #fff, @secondary-color);
+          .primaryBtn(10px 20px, inline, @base-color, @secondary-color);
         }
 
         .secondary {

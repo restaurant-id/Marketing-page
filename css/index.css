@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Avenir", sans-serif;
   background: #dddddd;
 }
 h1,
@@ -351,7 +351,7 @@ img {
 }
 .navbar .container .left-side-ul li i {
   padding: 10% 1%;
-  color: black;
+  color: #000;
 }
 .navbar .container .left-side-ul .logo {
   font-size: 3rem;
@@ -371,10 +371,10 @@ img {
   font-size: 2rem;
   text-decoration: none;
   color: #ff9d00;
-  font-weight: 600;
 }
-.navbar .container .right-side-ul li .user i {
-  color: black;
+.navbar .container .right-side-ul li .fa-chevron-down {
+  color: #000;
+  font-size: 20px;
 }
 .navbar-before-login .container {
   display: flex;
@@ -403,7 +403,7 @@ img {
 }
 .navbar-before-login .container .left-side-ul li i {
   padding: 10% 1%;
-  color: black;
+  color: #333;
 }
 .navbar-before-login .container .left-side-ul .logo {
   font-size: 3rem;
@@ -527,7 +527,7 @@ img {
   padding: 2%;
 }
 .main-footer .footer-nav ul li a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 25px;
 }
@@ -749,7 +749,7 @@ img {
   background: #6200ff;
   border: none;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 .search-header .container .form-wrapper .btn:hover {
   background: hsl(258, 80%, 32%);
@@ -1050,7 +1050,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, #000000, #000000);
+  background-image: linear-gradient(to bottom right, #000, #000);
   opacity: 0.7;
   z-index: 0;
 }
@@ -1072,11 +1072,11 @@ img {
   padding: 18px 40px;
   display: block;
   color: #6200ff;
-  background: white;
+  background: #fff;
   text-decoration: none;
 }
 .showcase .form-wrapper .btn:hover {
-  color: white;
+  color: #fff;
   background: #ff9d00;
 }
 .showcase .form-wrapper .input-container {

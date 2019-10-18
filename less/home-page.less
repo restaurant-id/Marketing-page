@@ -14,7 +14,11 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(to bottom right, #000000, #000000);
+      background-image: linear-gradient(
+        to bottom right,
+        @default-color,
+        @default-color
+      );
       opacity: 0.7;
       z-index: 0;
     }
@@ -32,11 +36,11 @@
     .btn {
       z-index: 0;
       margin-left: 5%;
-      .primaryBtn(18px 40px, block, @primary-color, white);
+      .primaryBtn(18px 40px, block, @primary-color, @base-color);
       text-decoration: none;
 
       &:hover {
-        color: white;
+        color: @base-color;
         background: @secondary-color;
       }
     }
@@ -117,7 +121,7 @@
         }
 
         .card {
-          background: #fff;
+          background: @cards-color;
           padding: 1% 2%;
           margin: 2% 0;
           border-radius: 10px;
