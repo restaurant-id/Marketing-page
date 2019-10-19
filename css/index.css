@@ -1271,3 +1271,33 @@ img {
     padding: 5% 0;
   }
 }
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  width: 100%;
+  margin-top: 5%;
+}
+.about-content .about-img {
+  width: 50%;
+}
+.about-content .about-text {
+  width: 50%;
+  padding: 5%;
+}
+@media (max-width: 760px) {
+  .about-content .about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .about-content .about-img {
+    width: 100%;
+  }
+  .about-content .about-text {
+    width: 100%;
+    padding: 5%;
+  }
+}
