@@ -1285,6 +1285,11 @@ img {
   width: 50%;
   padding: 5%;
 }
+.about-content .about-text h3 {
+  font-family: "Avenir", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
 @media (max-width: 760px) {
   .about-content .about-content {
     display: flex;
@@ -1299,5 +1304,8 @@ img {
   .about-content .about-text {
     width: 100%;
     padding: 5%;
+  }
+  .about-content .grilling {
+    display: none;
   }
 }
