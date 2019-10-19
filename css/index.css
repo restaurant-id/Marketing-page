@@ -921,11 +921,11 @@ img {
 .search-header .container .form-wrapper .input {
   height: 20px;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 .search-header .container .form-wrapper #input-icon {
   position: absolute;
-  top: 30%;
+  top: 25%;
   bottom: 0;
   left: 8px;
 }
@@ -1234,6 +1234,10 @@ img {
   background: #fff;
   text-decoration: none;
 }
+.showcase .form-wrapper .btn a {
+  color: #696969;
+  text-decoration: none;
+}
 .showcase .form-wrapper .btn:hover {
   color: #fff;
   background: #ee882f;
@@ -1246,11 +1250,11 @@ img {
 .showcase .form-wrapper .input {
   height: 20px;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 40px;
 }
 .showcase .form-wrapper #input-icon {
   position: absolute;
-  top: 30%;
+  top: 25%;
   bottom: 0;
   left: 8px;
 }
