@@ -403,7 +403,7 @@ img {
 }
 .navbar-before-login .container .left-side-ul li i {
   padding: 10% 1%;
-  color: #696969;
+  color: #000;
 }
 .navbar-before-login .container .left-side-ul .logo {
   font-size: 3rem;
@@ -903,7 +903,7 @@ img {
 .search-header .container .form-wrapper .btn {
   z-index: 0;
   margin-left: 1.8%;
-  padding: 25px 40px;
+  padding: 15px 40px;
   display: block;
   background: #4736e2;
   border: none;
@@ -1296,6 +1296,10 @@ img {
   margin: 1% 5% 1% 0;
   background-size: cover;
   padding: 15%;
+}
+.restaurants-selection .container .row .col-1 .boxes .box:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .restaurants-selection .container .row .col-1 .boxes .box1 {
   background: url(/img/box1.jpg);
