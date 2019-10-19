@@ -165,7 +165,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -575,7 +575,7 @@ img {
 }
 .search-result-showcase a .stamp i {
   margin-top: 2%;
-  color: #ee882f;
+  color: #efcf1e;
 }
 .search-result-main .container .row {
   display: flex;
@@ -1294,8 +1294,32 @@ img {
   width: 100%;
   height: 150px;
   margin: 1% 5% 1% 0;
-  background: #ccc;
+  background-size: cover;
   padding: 15%;
+}
+.restaurants-selection .container .row .col-1 .boxes .box1 {
+  background: url(/img/box1.jpg);
+  background-size: cover;
+}
+.restaurants-selection .container .row .col-1 .boxes .box2 {
+  background: url(/img/box2.jpg);
+  background-size: cover;
+}
+.restaurants-selection .container .row .col-1 .boxes .box3 {
+  background: url(/img/box3.jpg);
+  background-size: cover;
+}
+.restaurants-selection .container .row .col-1 .boxes .box4 {
+  background: url(/img/box4.jpg);
+  background-size: cover;
+}
+.restaurants-selection .container .row .col-1 .boxes .box5 {
+  background: url(/img/box5.jpg);
+  background-size: cover;
+}
+.restaurants-selection .container .row .col-1 .boxes .box6 {
+  background: url(/img/box6.jpg);
+  background-size: cover;
 }
 .restaurants-selection .container .row .col-2 {
   margin-left: 5%;
