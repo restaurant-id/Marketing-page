@@ -1,0 +1,62 @@
+main.contact {
+    background-image: url("../img/bg_contact.jpeg");
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    // opacity: .25;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+
+    label {
+        font-size: 1.5rem;
+        color: @base-color;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+    input {
+        padding: 10px 10px;
+    }
+
+    button.btn {
+        width: 20%;
+        margin: 20px auto;
+        padding: 15px 0;
+        border-radius: 5px;
+        background-color: @primary-color;
+        border: 1px solid @primary-color;
+        color: @base-color;
+        font-size: 1.5rem;
+        transition: .7s;
+    }
+
+    button.btn:hover {
+        width: 20%;
+        margin: 20px auto;
+        padding: 15px 0;
+        border-radius: 5px;
+        background-color: @base-color;
+        border: 1px solid @base-color;
+        color: @primary-color;
+        font-size: 1.5rem;
+    }
+
+    @media @mobile {
+
+        form {
+            width: 400%;
+            margin: 0 auto;
+    
+        }
+    }
+}
+
