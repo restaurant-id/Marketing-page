@@ -1,0 +1,332 @@
+.search-header {
+  background: url(/img/header.jpg) center;
+  background-size: cover;
+  height: 15%;
+  .container {
+    .form-wrapper {
+      z-index: 1;
+      height: 100%;
+      .displayFlex(center, row, center, none);
+
+      input {
+        padding: 10%;
+      }
+
+      .btn {
+        z-index: 0;
+        margin-left: 1.8%;
+        .primaryBtn(15px 40px, block, @base-color, @primary-color);
+        border: none;
+        text-decoration: none;
+        color: @base-color;
+
+        &:hover {
+          background: desaturate(hsl(258, 100%, 32%), 20%);
+        }
+      }
+
+      // Icon embedded into input (positioning)
+      .input-container {
+        position: relative;
+        padding: 0;
+        margin: 0;
+      }
+      .input {
+        height: 20px;
+        margin: 0;
+        padding-left: 40px;
+      }
+      #input-icon {
+        position: absolute;
+        top: 25%;
+        bottom: 0;
+        left: 8px;
+      }
+    }
+  }
+}
+
+.search-main-section {
+  .container {
+    .row {
+      .displayFlex(none, row, none, none);
+      // Column One
+      .col-1 {
+        margin-top: 2%;
+        height: 100%;
+        width: 30%;
+        // Column Container
+        .col-container {
+          max-width: 350px;
+          margin: 0 auto;
+          // Map
+          .map {
+            margin: auto;
+            background: url(/img/map.jpg);
+            background-size: cover;
+            height: 100px;
+            width: 100%;
+            border-radius: 5px;
+            .displayFlex(center, row, center, none);
+            h1 {
+              color: @base-color;
+              text-align: center;
+              margin: auto 0;
+            }
+          }
+          .price {
+            .label-price {
+              margin: 5% 0 1% 0;
+              color: @light-grey-color;
+              font-weight: bold;
+            }
+            // Price Icons
+            .price-content {
+              ul {
+                .displayFlex(center, row, center, none);
+
+                .border {
+                  border-right: @border-light;
+                }
+
+                li {
+                  padding: 1% 2%;
+                }
+              }
+            }
+          }
+          // Checkboxes
+          .checkbox-wrapper {
+            margin: 5% 0;
+            h5 {
+              font-size: 20px;
+            }
+
+            .checkboxes {
+              .box {
+                p {
+                  margin-top: 2%;
+                  margin-left: 5%;
+                }
+                .displayFlex(none, row, none, none);
+              }
+
+              .more {
+                font-size: 15px;
+                margin-left: 10%;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      // Column Two
+      .col-2 {
+        margin-left: 5%;
+        width: 100%;
+        height: 100%;
+        // Column Container
+        .col-container {
+          max-width: 1000px;
+          margin: 0 auto;
+          margin-top: 2%;
+          // Column header
+          .col-header {
+            .displayFlex(none, row, none, none);
+            border-bottom: @border-light;
+
+            .filter {
+              margin-right: 1%;
+              font-size: 2rem;
+            }
+
+            .tag {
+              margin-top: 2%;
+              color: @light-grey-color;
+              text-decoration: none;
+            }
+
+            .close {
+              margin-top: 2%;
+              margin-left: 0.5%;
+              color: @light-grey-color;
+            }
+          }
+
+          // Cards
+          .restaurants-wrapper {
+            h5 {
+              font-size: 2rem;
+              margin: 1% 0 0 0;
+            }
+            .restaurant-card {
+              padding: 1% 2%;
+              margin: 1% 0;
+              border-radius: 10px;
+              width: 100%;
+
+              .flex-wrapper {
+                .displayFlex(none, row, none, none);
+
+                .restaurant-pic {
+                  width: 30%;
+                  height: 30%;
+                }
+
+                .restaurant-info-wrapper {
+                  width: 100%;
+                  .displayFlex(space-between, row, none, none);
+
+                  .restaurant-info {
+                    margin-left: 2%;
+
+                    a {
+                      text-decoration: none;
+                      .title {
+                        color: @secondary-color;
+                        font-size: 3rem;
+
+                        span {
+                          display: block;
+                          color: @light-grey-color;
+                          font-size: 20px;
+                        }
+                      }
+
+                      &:hover {
+                        opacity: 0.7;
+                      }
+                    }
+
+                    .recommended {
+                      color: @primary-color;
+                    }
+                  }
+                  .priced {
+                    margin-top: 6%;
+                    p {
+                      color: @light-grey-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media @tablet {
+  .search-header {
+    height: 50%;
+    .container {
+      .form-wrapper {
+        .displayFlex(center, column, center, none);
+
+        .btn {
+          z-index: 0;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+  .search-main-section {
+    .container {
+      max-width: 700px;
+
+      .priced {
+        margin-top: 6%;
+        p {
+          color: @light-grey-color;
+        }
+
+        .fa-user {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media @mobile {
+  .search-header {
+    height: 50%;
+    .container {
+      .form-wrapper {
+        .displayFlex(center, column, center, none);
+
+        .btn {
+          z-index: 0;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+
+  .search-main-section {
+    .container {
+      .row {
+        .displayFlex(center, column, none, none);
+        // Column One
+        .col-1 {
+          margin-top: 2%;
+          height: 100%;
+          width: 100%;
+        }
+        // Column Two
+        .col-2 {
+          margin-left: 0;
+          margin: 0 auto;
+          width: 80%;
+          height: 100%;
+          // Column Container
+          .col-container {
+            // Cards
+            .restaurants-wrapper {
+              .restaurant-card {
+                padding: 1% 2%;
+                margin: 5% 0;
+
+                .flex-wrapper {
+                  .displayFlex(none, row, none, none);
+
+                  .restaurant-info-wrapper {
+                    .displayFlex(space-between, row, none, none);
+
+                    .restaurant-info {
+                      margin-left: 2%;
+                      .title {
+                        color: @secondary-color;
+                        font-size: 3rem;
+                        span {
+                          display: block;
+                          color: @light-grey-color;
+                          font-size: 20px;
+                        }
+                      }
+                      .recommended {
+                        color: @primary-color;
+                      }
+                    }
+                    .priced {
+                      margin-top: 6%;
+                      p {
+                        color: @light-grey-color;
+                      }
+
+                      .fa-user {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
