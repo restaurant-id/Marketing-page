@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurant Passport</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5192607be2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="left-side-ul">
+                <li class="logo">
+                    <a href="index.html">Restaurant Passport</a>
+                </li>
+                <li>
+                    <a href="search-list.html"><i class="fas fa-map-marked-alt fa-2x"></i></a>
+                </li>
+                <li class="border">
+                    <a href="search-list.html"><i class="fas fa-chevron-down fa-2x"></i></a>
+                </li>
+            </ul>
+            <ul class="right-side-ul">
+                <li>
+                    <a class="user" href="#!">Hi, Ben</a>
+                    <!-- Module -->
+                    <a class="signout" id="SignOut" href="before_login_index.html">Sign Out</a>
+                </li>
+                <li>
+                    <a onclick="openSignOut()" href="#"><i class="fas fa-chevron-down "></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Page -->
+    <main class="contact">
+        <div class="container">
+            <!-- Contact Form -->
+            <form action="#">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" placeholder="Comments.." style="height:200px"></textarea>
+
+                <button class="btn" type="submit">Submit</button>
+                <!-- <input class="btn" type="submit" value="Submit"> -->
+
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; Copyright 2019 Restaurant Passport, LLC</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Restaurant Passport</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5192607be2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="left-side-ul">
+                <li class="logo">
+                    <a href="index.html">Restaurant Passport</a>
+                </li>
+                <li>
+                    <a href="search-list.html"><i class="fas fa-map-marked-alt fa-2x"></i></a>
+                </li>
+                <li class="border">
+                    <a href="search-list.html"><i class="fas fa-chevron-down fa-2x"></i></a>
+                </li>
+            </ul>
+            <ul class="right-side-ul">
+                <li>
+                    <a class="user" href="#!">Hi, Ben</a>
+                    <!-- Module -->
+                    <a class="signout" id="SignOut" href="before_login_index.html">Sign Out</a>
+                </li>
+                <li>
+                    <a onclick="openSignOut()" href="#"><i class="fas fa-chevron-down "></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Page -->
+    <main class="about">
+        <div class="container">
+            <!-- Info -->
+            <section class="about-content">
+                <!-- Kitchen -->
+                <div class="about-img kitchen">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="img/about1.jpeg" alt="Kitchen">
+                        <div class="pattern pattern--left-down absolute z1"></div>
+                    </div>
+                </div>
+                <div class="about-text kitchen">
+                    <h3>What's Cooking</h3>
+                    <p>Cooking techniques and ingredients vary widely across the world, from grilling food over an open
+                        fire to using electric stoves, to baking in various types of ovens, reflecting unique
+                        environmental, economic, and cultural traditions and trends. </p>
+                </div>
+
+                <!-- Grilling -->
+                <div class="about-text grilling">
+                    <h3>What is Trending Now?</h3>
+                    <p>As we step into a new year, we take a peek at what will get us salivating and items we will be
+                        tossing into our shopping carts in 2019..</p>
+                </div>
+                <div class="about-img grilling">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="img/about2.jpeg" alt="Grilling">
+                        <div class="pattern pattern--right-middle absolute z1"></div>
+                    </div>
+                </div>
+
+                <!-- Restuarant -->
+                <div class="about-img restuarant">
+                    <div class="relative">
+                        <img class="info-image relative z2" src="img/about3.jpeg" alt="Restuarant">
+                        <div class="pattern pattern--left-up absolute z1"></div>
+                    </div>
+                </div>
+                <div class="about-text restuarant">
+                    <h3>Most Popular Restaurants</h3>
+                    <p>It’s easy to see the appeal of dining out: good food, nice ambiance, and someone else has to do
+                        the dishes. But all that delicious convenience can be expensive.</p>
+                </div>
+            </section>
+
+        </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; Copyright 2019 Restaurant Passport, LLC</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
