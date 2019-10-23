@@ -1033,12 +1033,12 @@ img {
   font-size: 2rem;
 }
 .search-main-section .container .row .col-2 .col-container .col-header .tag {
-  margin-top: 1%;
+  margin-top: 2%;
   color: #5a5a5a;
   text-decoration: none;
 }
 .search-main-section .container .row .col-2 .col-container .col-header .close {
-  margin-top: 1%;
+  margin-top: 2%;
   margin-left: 0.5%;
   color: #5a5a5a;
 }
