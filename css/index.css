@@ -545,6 +545,13 @@ img {
     text-align: center;
     color: #fff;
   }
+  .main-footer .footer-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
   .main-footer .footer-nav ul li a {
     font-size: 16px;
   }
@@ -1398,6 +1405,7 @@ img {
   }
   .showcase .form-wrapper .btn {
     margin-top: 5%;
+    margin-left: 2%;
   }
   .restaurants-selection .container {
     max-width: 700px;
@@ -1453,6 +1461,16 @@ img {
   }
   .restaurants-selection .container .row .col-1 h1 {
     text-align: center;
+  }
+  .restaurants-selection .container .row .col-1 .boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .restaurants-selection .container .row .col-1 .boxes .box {
+    height: 300px;
   }
   .restaurants-selection .container .row .col-2 {
     margin-left: 0;
