@@ -177,7 +177,7 @@ img {
   display: none;
 }
 .signInForm .form-container {
-  max-width: 500px;
+  width: 500px;
   padding: 10%;
   background-color: white;
 }
@@ -232,7 +232,7 @@ img {
   z-index: 9;
 }
 .signUpForm .form-container {
-  max-width: 500px;
+  width: 500px;
   padding: 10%;
   background-color: white;
 }
