@@ -376,6 +376,9 @@ img {
   color: #000;
   font-size: 20px;
 }
+.navbar-before-login {
+  background: #fff;
+}
 .navbar-before-login .container {
   display: flex;
   justify-content: space-around;
@@ -417,7 +420,7 @@ img {
 }
 .navbar-before-login .container .right-side-ul {
   justify-content: end;
-  margin-top: 0.3%;
+  margin-top: 0.5%;
 }
 .navbar-before-login .container .right-side-ul li .primary {
   font-size: 2rem;
