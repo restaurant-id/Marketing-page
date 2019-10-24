@@ -1658,3 +1658,50 @@ form button.btn:hover {
     margin: 0 auto;
   }
 }
+.career-showcase {
+  background: url(../img/career.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.career-showcase .container .form-wrapper {
+  padding-top: 0;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.career-showcase .container .form-wrapper input {
+  padding: 10%;
+}
+.career-showcase .container .form-wrapper .btn {
+  z-index: 0;
+  margin-left: 2.3%;
+  padding: 15px 40px;
+  display: block;
+  background: #4736e2;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+.career-showcase .container .form-wrapper .btn:hover {
+  background: hsl(258, 80%, 32%);
+}
+.career-showcase .container .form-wrapper .input-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.career-showcase .container .form-wrapper .input {
+  height: 20px;
+  margin: 0;
+  padding-left: 40px;
+}
+.career-showcase .container .form-wrapper #input-icon {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 8px;
+}
