@@ -899,6 +899,7 @@ img {
   height: 15%;
 }
 .search-header .container .form-wrapper {
+  padding-top: 0;
   z-index: 1;
   height: 100%;
   display: flex;
@@ -912,7 +913,7 @@ img {
 }
 .search-header .container .form-wrapper .btn {
   z-index: 0;
-  margin-left: 1.8%;
+  margin-left: 2.3%;
   padding: 15px 40px;
   display: block;
   background: #4736e2;
