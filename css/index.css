@@ -1705,3 +1705,17 @@ form button.btn:hover {
   bottom: 0;
   left: 8px;
 }
+@media (max-width: 1000px) {
+  .career-showcase .container .form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .career-showcase .container .form-wrapper .btn {
+    z-index: 0;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+}
