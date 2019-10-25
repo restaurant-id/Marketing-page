@@ -177,7 +177,7 @@ img {
   display: none;
 }
 .signInForm .form-container {
-  max-width: 500px;
+  width: 500px;
   padding: 10%;
   background-color: white;
 }
@@ -232,7 +232,7 @@ img {
   z-index: 9;
 }
 .signUpForm .form-container {
-  max-width: 500px;
+  width: 500px;
   padding: 10%;
   background-color: white;
 }
@@ -587,6 +587,90 @@ img {
   margin-top: 2%;
   color: #efcf1e;
 }
+.search-result-showcase-result2 {
+  background: url(../img/card1.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.search-result-showcase-result2 a {
+  color: #696969;
+}
+.search-result-showcase-result2 a .stamp {
+  border-radius: 10px;
+  margin: 2%;
+  float: right;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+  background: #fff;
+}
+.search-result-showcase-result2 a .stamp p {
+  margin-top: 3%;
+}
+.search-result-showcase-result2 a .stamp i {
+  margin-top: 2%;
+  color: #efcf1e;
+}
+.search-result-showcase-result3 {
+  background: url(/img/card3.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.search-result-showcase-result3 a {
+  color: #696969;
+}
+.search-result-showcase-result3 a .stamp {
+  border-radius: 10px;
+  margin: 2%;
+  float: right;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+  background: #fff;
+}
+.search-result-showcase-result3 a .stamp p {
+  margin-top: 3%;
+}
+.search-result-showcase-result3 a .stamp i {
+  margin-top: 2%;
+  color: #efcf1e;
+}
+.search-result-showcase-result4 {
+  background: url(/img/card2.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.search-result-showcase-result4 a {
+  color: #696969;
+}
+.search-result-showcase-result4 a .stamp {
+  border-radius: 10px;
+  margin: 2%;
+  float: right;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: none;
+  flex-flow: none;
+  background: #fff;
+}
+.search-result-showcase-result4 a .stamp p {
+  margin-top: 3%;
+}
+.search-result-showcase-result4 a .stamp i {
+  margin-top: 2%;
+  color: #efcf1e;
+}
 .search-result-main .container .row {
   display: flex;
   justify-content: none;
@@ -899,6 +983,7 @@ img {
   height: 15%;
 }
 .search-header .container .form-wrapper {
+  padding-top: 0;
   z-index: 1;
   height: 100%;
   display: flex;
@@ -912,7 +997,7 @@ img {
 }
 .search-header .container .form-wrapper .btn {
   z-index: 0;
-  margin-left: 1.8%;
+  margin-left: 2.3%;
   padding: 15px 40px;
   display: block;
   background: #4736e2;
@@ -1571,5 +1656,66 @@ form button.btn:hover {
   form form {
     width: 400%;
     margin: 0 auto;
+  }
+}
+.career-showcase {
+  background: url(../img/career.jpg) center;
+  background-size: cover;
+  height: 40%;
+}
+.career-showcase .container .form-wrapper {
+  padding-top: 0;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: none;
+}
+.career-showcase .container .form-wrapper input {
+  padding: 10%;
+}
+.career-showcase .container .form-wrapper .btn {
+  z-index: 0;
+  margin-left: 2.3%;
+  padding: 15px 40px;
+  display: block;
+  background: #4736e2;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+.career-showcase .container .form-wrapper .btn:hover {
+  background: hsl(258, 80%, 32%);
+}
+.career-showcase .container .form-wrapper .input-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.career-showcase .container .form-wrapper .input {
+  height: 20px;
+  margin: 0;
+  padding-left: 40px;
+}
+.career-showcase .container .form-wrapper #input-icon {
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 8px;
+}
+@media (max-width: 1000px) {
+  .career-showcase .container .form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: none;
+  }
+  .career-showcase .container .form-wrapper .btn {
+    z-index: 0;
+    margin-top: 5%;
+    margin-left: 0;
   }
 }
